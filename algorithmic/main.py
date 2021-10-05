@@ -3,8 +3,9 @@ class algos(object):
 
     # insertion sort algorithm
     def insertion_sort(self, lst):
+        print("original list")
+        print(lst)
         for i in range(0, len(lst)):
-            print(lst[i])
             currentVal = lst[i]
             currentPos = i
             
@@ -13,7 +14,8 @@ class algos(object):
                 currentPos = currentPos - 1
             
             lst[currentPos] = currentVal
-
+        print("sorted list")
+        print(lst)
 
 array = [20, 42, 12, 65, 45, 63, 72, 14, 25, 74]
 
